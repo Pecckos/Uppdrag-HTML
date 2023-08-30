@@ -1,0 +1,150 @@
+/*
+Theme Name: Jessicas Egna Tema
+Author: Jessica Bjurlerstam
+Description: The Temat
+Version: 1.0
+License: GNU General Public License v2 or later
+Tags: Taggar 
+Text Domain: Grundtema
+*/
+
+/* Här sätter jag bakrundsfärg och texten på sidan*/
+
+body {
+    background-color: rgb(254, 250, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Här är bakrundsfärgen vit, färg på texten blå, har satt in storleken på texten och typ, samt fixat "boxarna" runt texten med margin och padding*/
+header {
+    background-color: rgb(255, 254, 254);
+    color: rgb(45, 81, 122);
+    font-size: 30px;
+    font-variant: small-caps;
+    padding: 30px;
+    margin: 0 150px 0 150px;
+}
+
+/*Id taggen på bilden har jag satt till höger med hjälp av float.*/
+#dator {
+    float: right;
+    margin: 0 70px;
+}
+
+/* Unorderd list har jag tagit bort prickarna, samt bakrund gråvit  */
+ul {
+    list-style-type: none;
+    margin: 0 150px 0 150px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgb(204, 204, 204);
+   }
+   /* Listan är float left så från vänster går listan i navbaren */
+   li {
+    float: left;
+   }
+/* Här är navbaren i block från vänster, texten är i mitten av blocken.  */
+   li a {
+    display: block;
+    color: #0c185e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   }
+
+ /* När man sätter musen över så kommer denna färg upp */
+   li a:hover {
+    background-color:  rgb(74, 70, 70);
+   }
+/* Ändrat så headern är 0 pixlar uppåt och 150pixlar åt höger, neråt och vänster.  */
+   .main {
+       margin: 0 150px;
+       
+   }
+/* Här har jag gjort en kant runt alla section taggar som är mörkgrå samt bakrundsfärg är ljusgrå */
+  section {
+      border: 3px solid #3b515e;
+      margin: 20px 35% 0 0;
+      background-color:rgb(193, 193, 193);
+      
+  }
+/* Padding runt article taggen så den sitter snyggare på sidan.  */
+  article {
+      padding: 20px 0 0 0;
+      
+  }
+
+  h1 {
+      margin: 20px;
+  }
+
+  p{
+      margin: 20px;;
+  }
+/* Sidebaren så har jag satt den åt höger, med längt och höjd på 400pixlar och 800pixlar
+Bakrundsfärgen är ljusgrå med position absolute så har jag korrigerat från toppen till höger. texten till mitten och en kant runt */
+  .sidebar  {
+      float: right;
+      width: 400px;
+      height: 800px;
+      background-color: rgb(204, 204, 204); 
+      position: absolute;  
+      top: 57%;
+      right: 10%;
+      border: 3px solid #3b515e;
+      text-align: center;
+  }
+
+
+/* klassen boxe själva sidebaren där bloginläggen ligger i så har jag gjort att man kan scrolla, med position right */
+ .boxe
+ {
+     float: right;
+     width: 400px;
+     height: 700px;
+     overflow: scroll;
+     
+ }
+
+ .boxes {
+     margin: 50px;
+     overflow: auto;
+ }
+
+  .box
+  {
+      float: right;
+      margin: 40px 70px;
+      
+      
+  }
+
+  input {
+      border: 3px solid #3b515e;
+      height: 30px;
+      width: 300px;
+
+  }
+/* Footern har jag satt som ljusgrå, med en annan text och small-caps position relative så den sitter i mitten.  */
+  footer {
+    background-color: rgb(204, 204, 204);
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    height: 100px;
+    padding: 20px;
+    position: relative;
+    margin-top: 30%;
+    
+  }
+/* Bilder som sitter i footern med float right */
+  #facebook {
+      float: right;
+      margin: 50px;
+  }
+
+  #instagram {
+      float: right;
+      margin: 50px 0 0 0;
+  }
+
+  
