@@ -1,0 +1,318 @@
+/*
+Theme Name: Jessicas kopia kopia
+Author: Jessica Bjurlerstam
+Description: Portfolio
+Version: 1.0
+License: GNU General Public License v2 or later
+Tags: Taggar h�r
+Text Domain: PortfolioJess
+*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #1a1b1f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 400;
+    background-color: white;
+}
+
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    z-index: 100;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+height: 150px;
+}
+
+#content {
+    margin: auto;
+    width: 90%;
+}
+
+#marcus {
+    position: relative;
+    
+}
+
+#marcus2 {
+    padding-top: 12%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#marcus2 h1 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.406);
+    font-size: 54px;
+}
+
+#marcus2 p {
+    
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgba(255, 255, 255, 0.406);
+    font-size: 25px;
+
+}
+
+#kunskaper {
+    color: white;
+    margin: 250px;
+    padding: 50px;
+    text-align: center;
+}
+
+#kunskaper h1 {
+    font-size: 20px;
+    color: rgba(10, 10, 10, 0.406);
+}
+
+#kunskaper h2 {
+    font-size: 34px;
+    line-height: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(24, 23, 23, 0.762);
+}
+
+#projekt {
+    display: flex;
+    flex-flow: row;
+    color: black;
+    
+}
+
+#picprojekt {
+    width: 50%;
+}
+
+#projekt h1 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.406);
+}
+
+#projekt h2 {
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.762);
+}
+#projekt p {
+    margin-right: 30px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.406);
+}
+
+#kontakt {
+    margin-top: 30%;
+    display: flex;
+}
+#pickontakt {
+    margin-bottom: 15%;
+    width: 50%;
+}
+#kontakt2 {
+    margin-left: 150px;
+}
+
+#kontakt2 h1 {
+    color: rgba(7, 7, 7, 0.406);
+    font-size: 20px;
+}
+
+#kontakt2 h2 {
+    font-size: 35px;
+    color: rgba(7, 7, 7, 0.762);
+}
+
+#kontakt p {
+    color: rgb(7, 7, 7);
+}
+
+#knapp {
+    margin-top: 20%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#knapp:hover {
+    color: turquoise;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 45%;
+    padding-top: 30px;
+}
+
+#jessica
+{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.379);
+    text-align: center;
+    margin-top: 20%;    
+    
+}
+
+.länk {
+    cursor: pointer;
+    color: black;
+    margin: 0px 0px 0px 15px;
+}
+
+
+
+.row {
+    text-align: center;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+
+.test{
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+    color: rgba(128, 128, 128, 0.803);
+}
+
+input {
+    background-color: rgba(128, 128, 128, 0.228);
+    padding: 10px 15px 10px 15px;
+}
+
+textarea {
+    background-color: rgba(128, 128, 128, 0.228);
+}
+
+#send {
+    border: none;
+    background-color: rgba(150, 143, 143, 0.516);
+    color: white;
+    padding: 20px 30px 20px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#kontaktamig {
+    font-size: 50px;
+    color: rgba(150, 143, 143, 156);
+}
+
+#smooth {
+    display: none;
+    position: absolute;
+    width: inherit;
+    top: 150px;
+    background-color: white;
+}
+
+.hamburgare {
+    width: 30%;
+}
+
+#hamburgareicon {
+    width: 100px;
+    float: right;
+    margin-top: 2%;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+ul a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+
+#section2 {
+    padding: 5% 0 0 0;
+}
+
+#section3 {
+    padding: 20% 0 0 0;
+}
+
+
+@media (max-width: 768px) {
+
+    #pic {
+        height: 200px;
+    }
+
+    #marcus2 {
+        padding-top: 0;
+    }
+
+    #marcus2 h1 {
+        font-size: 25px;
+        margin: 0%;
+    }
+
+    #marcus2 p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    #kunskaper {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #projekt {
+        flex-direction: column;
+    }
+
+    #picprojekt {
+        width: 90%;
+    }
+
+    #kontakt {
+        flex-direction: column;
+    }
+
+    #pickontakt {
+        width: 90%;
+    }
+
+
+}
+
+#knappe {
+    position: absolute;
+    right: 537px;
+    border: none;
+    font-size: 20px;
+    margin-top: 250px;
+    color: rgba(0, 0, 0, 0.379);
+    cursor: pointer;
+}
+

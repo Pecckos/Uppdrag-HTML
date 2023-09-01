@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Jessicas Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Det här är min portfolio, här visar jag mina kunskaper inom webbtveckling.
+	Min hemsida har HTML, CSS, PHP och javascript kod som körs via wordpress.">
+	<link href="style.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function submitForm(s) {
+s.value = "Skickat";
+alert('Tack för ditt meddelande!');
+return false;
+
+}
+
+function openmenu() {
+	var open = document.getElementById("smooth");
+	open.style.display = "block"; 
+
+}
+
+function closemenu() {
+	var open = document.getElementById("smooth");
+	open.style.display = "none"; 
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+</div>
+
+
+	<header class="header">
+
+		<img id="logo" src="Jessica B.png" alt="Logga">
+
+		<div class="hamburgare" onmouseover="openmenu()" onmouseout="closemenu()">
+		
+			<img id="hamburgareicon" src="navbar.png" alt="navbar">
+			<div id="smooth">
+				<ul>
+					<li><a href="#">Hem</a></li>
+					<li><a href="#section1">Om Mig</a></li>
+					<li><a href="#section2">Kunskaper</a></li>
+					<li><a href="#section3">Projekt</a></li>
+					<li><a href="#section4">Kontakta mig</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+		
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div id="content">
+
+	<section id="section1">
+
+		<div id="marcus">
+
+			<img id="pic" src="bild.jpg" alt="Svarta boxar" style="width:100%">
+
+			<div id="marcus2">
+
+				<h1> Om Mig </h1>
+
+				<p> Jag heter Jessica Bjurlerstam och går webbutveckling 2 för tillfället.
+
+						Jag är spralling och social tjej på 29år. 
+
+						Jobbar just nu med felsökning och buggtestning av ett kassasystem.
+
+						Mina intressen är programmering så som C#, HTML och CSS. </p>
+
+			</div>
+
+		</div>
+		
+	</section>
+
+	<section id="section2">
+
+		<div id="kunskaper">
+
+			<h1>KUNSKAPER</h1>
+
+			<h2>Mina kunskaper för tillfället är: <br>- C# <br>- HTML & CSS </h2>
+
+		</div>
+
+	</section>
+
+<section id="section3">
+
+	<div id="projekt">
+
+		<div id="projekt2">
+
+			<H1> PROJEKT </h1>
+
+			<h2> Wordpress sida </h2>
+
+			<p>Denna sida skapade jag i webbutveckling 1 via wordpress. En enkel och stilren hemsida. Med klara färger och bra tillgänglighet.</p>
+
+		</div>
+
+		<img id="picprojekt" src="webbsida.png" alt="Projekt Wordpress">
+
+	</div>
+
+</section>
+
+	<section id="section4">
+
+		<div id="kontakt">
+
+			<img id="pickontakt" src="bild1.png" alt="Svarta boxar">
+
+			<div id=kontakt2>
+
+				<h1> KONTAKTA MIG</h1>
+
+				<h2>Kontakta mig här!</h2>
+
+				<p>Kontakta mig gärna ifall du vill ha mer information.</p>
+
+				<a href="#">
+
+					<button id="knapp" type="button">TRYCK HÄR</button>
+
+				</a>
+
+			</div>
+
+		</div>	
+</section>
+</div>
+			<aside class="sidebar">
+
+					<p></p>
+
+			</aside>
+
+		</div>
+<footer>
+
+	<div id="footer">
+
+		<div>
+			<img class="icon" src="facebook.png" alt="Facebook ikon">
+			<a class="länk" href="https://www.facebook.com/jessica.bjurlerstam/" target="_blank">Facebook</a>
+		</div>
+
+		<div>
+			<img class="icon" src="instagram.png" alt="Instagram ikon">
+			<a class="länk" href="https://www.instagram.com/jessicabjurlerstam/" target="_blank">Instagram</a>
+		</div>
+
+		<div>
+			<img class="icon" src="mail.png" alt="Mail ikon">
+			<a class="länk" href="mailto:jessicabjurlerstam@hotmail.com">Mail</a>
+		</div>
+
+	</div>
+
+	<div>
+		<button id="knappe">Tryck på mig om du vill veta din skärmupplösning</button>
+	</div>
+
+	<div> 
+		<h1 id="jessica"> Copyright © 2020 Jessica Bjurlerstam. </h1>
+	</div>
+
+</footer>
+	<script src="http://localhost/wordpress/wp-content/themes/tema%20-%20kopia%20-%20kopia/script.js"></script>
+	<script src="http://localhost/wordpress/wp-content/themes/tema%20-%20kopia%20-%20kopia/script2.js"></script>
+<script>
+
+/*
+Här döper jag en knapp till "knappe den har en funktion som gör att den tar fönstrets width först i den översta strängen .width
+Sen tar den även .height och skriver ut strängarna i en alert ruta som kommer upp när man trycker på knappen. 
+*/
+$(document).ready(function(){ 
+  $("#knappe").click(function(){
+    var txt = "";
+    txt += "Fönster Bredd/Höjd: " + $(window).width();
+    txt += "x" + $(window).height();
+    alert(txt);
+  });
+});
+
+/*
+Här har jag skapat en kod som har samma ID som knappen jag skapade #knappe. 
+När man nu trycker på knappen så kommer taggen body att ändra färg till rosa. 
+*/
+$(document).ready(function(){
+  $("#knappe").click(function(){
+    $("body").css("background-color", "pink");
+  });
+});
+
+		</script>
+	</body>
+</html>
